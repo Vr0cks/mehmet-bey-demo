@@ -5,7 +5,7 @@
 */
 
 /* 📞 İletişim & Bildirim Ayarları */
-export const WHATSAPP_NUMBER = '905551234567';
+export const WHATSAPP_NUMBER = '905462961848';
 
 /* 📧 Google Apps Script Webhook URL (Rezervasyonların gideceği yer) */
 export const WEBHOOK_URL = ''; // Buraya Google Script'ten aldığınız URL'i yapıştırın
