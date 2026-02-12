@@ -8,7 +8,7 @@
 export const WHATSAPP_NUMBER = '905462961848';
 
 /* 📧 Google Apps Script Webhook URL (Rezervasyonların gideceği yer) */
-export const WEBHOOK_URL = ''; // Buraya Google Script'ten aldığınız URL'i yapıştırın
+export const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbxlehgweoVX9JUFh3KuGGA5c26LafmcRs4GZ6UxGvmGEIt6L40aSbOOSvtYz411Veft/exec';
 
 /* 📍 Rota Hesaplama Hızı (Dakika/Km) */
 export const ROUTE_SPEED = 1.1;
