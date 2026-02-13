@@ -91,7 +91,7 @@ const T = {
     },
     footer: {
       address: 'Adnan Menderes Havalimanı, Gaziemir, İzmir',
-      rights: '© 2024 İzmir VIP Transfer. Tüm hakları saklıdır.',
+      rights: '© 2002 - 2026 İzmir VIP Transfer. All rights reserved.',
       quickLinks: 'Hızlı Bağlantılar',
       contactTitle: 'İletişim',
       followUs: 'Bizi Takip Edin',
@@ -162,8 +162,8 @@ const T = {
       ]
     },
     footer: {
-      address: 'Adnan Menderes Airport, Gaziemir, İzmir',
-      rights: '© 2024 İzmir VIP Transfer. All rights reserved.',
+      address: 'Adnan Menderes Airport, Gaziemir, Izmir',
+      rights: '© 2002 - 2026 Izmir VIP Transfer. All rights reserved.',
       quickLinks: 'Quick Links',
       contactTitle: 'Contact',
       followUs: 'Follow Us',
@@ -1037,7 +1037,7 @@ function Footer({ t }) {
                 <span className="text-gold-400 font-semibold text-lg ml-1">VIP</span>
               </div>
             </div>
-            <p className="text-neutral-400 text-sm leading-relaxed">{t.about.p1.substring(0, 120)}...</p>
+            <p className="text-neutral-400 text-sm leading-relaxed">{t.about.p1}</p>
           </div>
 
           {/* Quick Links */}
@@ -1090,7 +1090,12 @@ function Footer({ t }) {
       {/* Bottom */}
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-neutral-500 text-sm">{t.footer.rights}</p>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <p className="text-neutral-500 text-sm">{t.footer.rights}</p>
+            <p className="text-neutral-600 text-xs flex items-center gap-1">
+              developed by <a href="https://vr0cks.com" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-400 transition-colors">vr0cks</a>
+            </p>
+          </div>
           <div className="flex items-center gap-4">
             <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-emerald-400 transition-colors">
               <WhatsAppIcon className="w-5 h-5" />
@@ -1169,9 +1174,6 @@ function ProcessSection({ lang }) {
               <div className="w-24 h-24 mx-auto bg-dark-900 border border-gold-400/30 rounded-full flex items-center justify-center mb-6 group-hover:border-gold-400 group-hover:shadow-[0_0_30px_-5px_rgba(212,168,82,0.3)] transition-all duration-500">
                 <div className="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-500">
                   {step.icon}
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-dark-800 border border-gold-400/50 rounded-full flex items-center justify-center text-gold-400 font-bold text-sm">
-                  {step.num}
                 </div>
               </div>
               <h3 className="text-xl font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
