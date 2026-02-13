@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
 
 @theme {
   --font-inter: 'Inter', sans-serif;
@@ -34,6 +34,18 @@ body {
 ::selection {
   background-color: #c9952c;
   color: #0a0a0a;
+}
+
+/* 📅 DATE PICKER DARK MODE FIX */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
 }
 
 /* Premium Animations */
@@ -83,4 +95,31 @@ body {
 
 .animate-slideDown {
   animation: slideDown 0.3s ease-out both;
+}
+
+/* Footer haritası için */
+iframe {
+  filter: grayscale(100%) invert(90%) contrast(85%);
+  transition: filter 0.5s ease;
+}
+
+iframe:hover {
+  filter: grayscale(0%) invert(0%);
+}
+
+/* Live Booking Notification Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out forwards;
 }
